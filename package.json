@@ -1,0 +1,27 @@
+{
+  "name": "react-global-store2",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aminadav/react-global-store.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Aminadav Glickshtein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aminadav/react-global-store/issues"
+  },
+  "homepage": "https://github.com/Aminadav/react-global-store#readme",
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.isequal": "^4.5.0",
+    "react": "^17.0.1"
+  }
+}
