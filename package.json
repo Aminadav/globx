@@ -1,6 +1,6 @@
 {
-  "name": "react-global-store2",
-  "version": "1.0.2",
+  "name": "globux",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aminadav/react-global-store.git"
+    "url": "git+https://github.com/Aminadav/globux.git"
   },
   "keywords": [
     "react"
@@ -16,12 +16,14 @@
   "author": "Aminadav Glickshtein",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aminadav/react-global-store/issues"
+    "url": "https://github.com/Aminadav/globux/issues"
   },
-  "homepage": "https://github.com/Aminadav/react-global-store#readme",
+  "homepage": "https://github.com/Aminadav/globux#readme",
   "dependencies": {
-    "lodash.clonedeep": "^4.5.0",
-    "lodash.isequal": "^4.5.0",
-    "react": "^17.0.1"
+    "lodash.clonedeep": "",
+    "lodash.isequal": ""
+  },
+  "peerDependencies": {
+    "react": ">16.0.0"
   }
 }
