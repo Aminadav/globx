@@ -12,7 +12,7 @@ Demo:
 // Usually you will put this in separate file.
 import {NewStore} from "globux"
 
-const store = GlobalStore.NewStore({
+const store = NewStore({
   key1:0,
   key2:0,
 })
