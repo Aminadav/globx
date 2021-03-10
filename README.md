@@ -1,6 +1,7 @@
 # Globux
 
 Please see the full working demo app: https://github.com/Aminadav/globux-todo
+
 Link to the first Reddit post about it: https://www.reddit.com/r/reactjs/comments/m27hqm/globux_a_global_state_manager_that_let_you_read/
 
 Demo:
