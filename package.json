@@ -1,8 +1,8 @@
 {
-  "name": "globux",
-  "version": "1.0.3",
+  "name": "globx",
+  "version": "1.0.7",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

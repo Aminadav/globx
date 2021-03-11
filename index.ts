@@ -1,7 +1,7 @@
 //@ts-check
 import { useState, useEffect, useRef } from "react"
-import isEqual from "lodash.isequal"
-import cloneDeep from "lodash.clonedeep"
+import isEqual = require("lodash.isequal")
+import cloneDeep = require("lodash.clonedeep")
 
 interface a{
   updateStore:()=>void
