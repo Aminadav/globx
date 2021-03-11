@@ -8,32 +8,77 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Lightweight',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The source-code is just several lines of code. And exposing only one function.
+        the <b>newStore</b> function. The store has only 1 function, and one hook.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Powerful',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        You can access to every part of the state or modify the state in-place everywhere. Just modify the state like and other JSON object, and call the function <b>updateState</b> it will rerender all the components that depended on the change. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Good for agilitiy.',
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+        No boilerplate code. Just call the function <b>newStore</b> with you initial state.
+        No selectors, action builders, providers or other things. Just access the store and modify it wherever you need.
+      </>
+    ),
+  },
+  {
+    title: 'Mutable',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        You can use any JS function directly on the store: Array push, pull, and others. No need for cloning.
+      </>
+    ),
+  },
+  {
+    title: 'It working fast',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        Only the components that should be render are automatically rerender. You can even memoize all your components, they will rerender when needed. GlobX automatically render only once per rendering cycle, so you can <b>updateStore</b> as many times you want.
+      </>
+    ),
+  },
+  {
+    title: 'Fully support by IDEs',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        You get auto-complete out-of-the-box to all your store, keys and values. No need to create definition files,
+        it automatically caclulated from your initial store. All smart language featurs like "Find all references", and "Rename Symbol" are working for all keys in the store, so it's make life easier when refactoring.
+       </>
+    ),
+  },
+  {
+    title: 'Fast renders.',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        To tell Globx that component is depened on specific path in the store you have to call the function <b>useRerenderIfNeed</b> and give it the path (it auto-completed).
+      </>
+    ),
+  },
+  {
+    title: 'You already know it',
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        That it. Three functions. If you read until here, you know everything about GlobX. Just see the examle todo app how to use it.
       </>
     ),
   },
@@ -59,8 +104,8 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Lightweight & powerful state management for Redux. 90% less code to write in compare to Redux/MobX.">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
