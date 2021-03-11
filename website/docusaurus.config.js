@@ -10,6 +10,18 @@ module.exports = {
   organizationName: 'aminadav', // Usually your GitHub org/user name.
   projectName: 'globx', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+
+      // Optional: see doc section bellow
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     navbar: {
       title: 'GlobX',
       logo: {

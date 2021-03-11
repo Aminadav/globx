@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Lightweight',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/father.svg',
     description: (
       <>
         The source-code is just several lines of code. And exposing only one function.
@@ -19,16 +19,16 @@ const features = [
   },
   {
     title: 'Powerful',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/car.svg',
     description: (
       <>
         You can access to every part of the state or modify the state in-place everywhere. Just modify the state like and other JSON object, and call the function <b>updateState</b> it will rerender all the components that depended on the change. 
       </>
     ),
   },
-  {
-    title: 'Good for agilitiy.',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+  { 
+    title: 'Good for Agile development',
+    imageUrl: 'img/agility.svg',
     description: (
       <>
         No boilerplate code. Just call the function <b>newStore</b> with you initial state.
@@ -38,7 +38,7 @@ const features = [
   },
   {
     title: 'Mutable',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/mutable.svg',
     description: (
       <>
         You can use any JS function directly on the store: Array push, pull, and others. No need for cloning.
@@ -47,7 +47,7 @@ const features = [
   },
   {
     title: 'It working fast',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/speed.svg',
     description: (
       <>
         Only the components that should be render are automatically rerender. You can even memoize all your components, they will rerender when needed. GlobX automatically render only once per rendering cycle, so you can <b>updateStore</b> as many times you want.
@@ -56,7 +56,7 @@ const features = [
   },
   {
     title: 'Fully support by IDEs',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/ide.svg',
     description: (
       <>
         You get auto-complete out-of-the-box to all your store, keys and values. No need to create definition files,
@@ -65,8 +65,8 @@ const features = [
     ),
   },
   {
-    title: 'Fast renders.',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Fast renders',
+    imageUrl: 'img/render.svg',
     description: (
       <>
         To tell Globx that component is depened on specific path in the store you have to call the function <b>useRerenderIfNeed</b> and give it the path (it auto-completed).
@@ -75,7 +75,7 @@ const features = [
   },
   {
     title: 'You already know it',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/know.svg',
     description: (
       <>
         That it. Three functions. If you read until here, you know everything about GlobX. Just see the examle todo app how to use it.
