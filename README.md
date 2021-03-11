@@ -1,6 +1,6 @@
-# Globux
+# Globx
 
-Please see the full working demo app: https://github.com/Aminadav/globux-todo
+Please see the full working demo app: https://github.com/Aminadav/globx-todo
 
 Link to the first Reddit post about it: https://www.reddit.com/r/reactjs/comments/m27hqm/globux_a_global_state_manager_that_let_you_read/
 
@@ -10,7 +10,7 @@ Demo:
 // First you should creating the store.
 // Usually you will create one store for each app and share this variable.
 // Usually you will put this in separate file.
-import {NewStore} from "globux"
+import {NewStore} from "globx"
 
 const store = NewStore({
   key1:0,
