@@ -22,7 +22,7 @@ const features = [
     imageUrl: 'img/car.svg',
     description: (
       <>
-        You can access to every part of the state or modify the state in-place everywhere. Just modify the state like and other JSON object, and call the function <b>updateState</b> it will rerender all the components that depended on the change. 
+        You can access to every part of the state or modify the state like and other JSON object. When you changing the state call the function  <b>updateStore</b> and GlobX automatically will reder the nessecery React components.        
       </>
     ),
   },
@@ -41,7 +41,7 @@ const features = [
     imageUrl: 'img/mutable.svg',
     description: (
       <>
-        You can use any JS function directly on the store: Array push, pull, and others. No need for cloning.
+        You can use any JS function directly on the store: Array push, pull, and others. No need for cloning even the increment operator (var++) is working. You also no required to normalize your store.
       </>
     ),
   },
@@ -59,8 +59,7 @@ const features = [
     imageUrl: 'img/ide.svg',
     description: (
       <>
-        You get auto-complete out-of-the-box to all your store, keys and values. No need to create definition files,
-        it automatically caclulated from your initial store. All smart language featurs like "Find all references", and "Rename Symbol" are working for all keys in the store, so it's make life easier when refactoring.
+        You get auto-complete out of the box to all your store, keys and values. No need to create definition files, it automatically calculated from your initial store. All smart language features like "Find all references", and "Rename Symbol" are working, so it's make life easier when refactoring.
        </>
     ),
   },
@@ -69,7 +68,7 @@ const features = [
     imageUrl: 'img/render.svg',
     description: (
       <>
-        To tell Globx that component is depened on specific path in the store you have to call the function <b>useRerenderIfNeed</b> and give it the path (it auto-completed).
+        To tell Globx that component is depened on specific path in the store you have to call the function <b>useRerenderIfNeed</b> and give it the path (don't worry the IDE will auto complete it for you).
       </>
     ),
   },
@@ -78,7 +77,16 @@ const features = [
     imageUrl: 'img/know.svg',
     description: (
       <>
-        That it. Three functions. If you read until here, you know everything about GlobX. Just see the examle todo app how to use it.
+        That it. Three functions. newStore, updateStore and useRerenderIfNeed. If you read until here, you know everything about GlobX. Just see the examle todo app how to use it.
+      </>
+    ),
+  },
+  {
+    title: 'Async/Await',
+    imageUrl: 'img/know.svg',
+    description: (
+      <>
+        You gonna love it. You can update the state wherever you want. It's working inside promises and intervals. No need to extensions or addons.
       </>
     ),
   },
