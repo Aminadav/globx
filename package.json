@@ -1,6 +1,6 @@
 {
   "name": "globx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aminadav/globux.git"
+    "url": "git+https://github.com/Aminadav/globx.git"
   },
   "keywords": [
     "react"
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Aminadav/globux/issues"
   },
-  "homepage": "https://github.com/Aminadav/globux#readme",
+  "homepage": "https://github.com/Aminadav/globx#readme",
   "dependencies": {
     "lodash.clonedeep": "",
     "lodash.isequal": ""

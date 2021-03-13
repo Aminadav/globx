@@ -1,4 +1,4 @@
-# Globx
+# GlobX
 
 Please see the full working demo app: https://github.com/Aminadav/globx-todo
 
