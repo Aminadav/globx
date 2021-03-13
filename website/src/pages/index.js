@@ -83,7 +83,7 @@ const features = [
   },
   {
     title: 'Async/Await',
-    imageUrl: 'img/know.svg',
+    imageUrl: 'img/parallel.svg',
     description: (
       <>
         You gonna love it. You can update the state wherever you want. It's working inside promises and intervals. No need to extensions or addons.
