@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Hola]]></title>
-            <link>https://globx.js.org/globx/blog/hola</link>
+            <link>https://globx.js.org/blog/hola</link>
             <guid>hola</guid>
             <pubDate>Thu, 11 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[I built a new solution for creating simple and powerful stores for React apps. GlobX let you change and read any part of the store from every component or traditional JavaScript code.]]></description>

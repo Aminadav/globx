@@ -10,7 +10,7 @@
     <entry>
         <title type="html"><![CDATA[Hola]]></title>
         <id>hola</id>
-        <link href="https://globx.js.org/globx/blog/hola"/>
+        <link href="https://globx.js.org/blog/hola"/>
         <updated>2021-03-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I built a new solution for creating simple and powerful stores for React apps. GlobX let you change and read any part of the store from every component or traditional JavaScript code.]]></summary>
     </entry>
