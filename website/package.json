@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "git add .; git commit -m 'update docs'; git push; GIT_USER=aminadav; docusaurus deploy",
+    "deploy": "git add .; git commit -m 'update docs'; git push; export GIT_USER=aminadav; docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
