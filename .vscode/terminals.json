@@ -1,0 +1,20 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "compile packagfe",
+      "description": "This is a description",
+      "command": "tsc --watch index.ts"
+    },
+    {
+      "name": "local website",
+      "description": "This is a description",
+      "command": "cd website; npm start -- --port 4000"
+    },
+    {
+      "name": "deploy website",
+      "description": "This is a description",
+      "command": "cd website; echo npm run build"
+    }
+  ]
+}

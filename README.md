@@ -2,7 +2,13 @@
 
 Please see the full working demo app: https://github.com/Aminadav/globx/tree/master/examples/todo
 
+See the website: https://globx.js.org
+
 Link to the first Reddit post about it: https://www.reddit.com/r/reactjs/comments/m27hqm/globux_a_global_state_manager_that_let_you_read/
+
+## Installation
+
+    npm i globx
 
 Demo:
 
@@ -10,14 +16,12 @@ Demo:
 // First you should creating the store.
 // Usually you will create one store for each app and share this variable.
 // Usually you will put this in separate file.
-import {NewStore} from "globx"
+import {newStore} from "globx"
 
-const store = NewStore({
+const store = newStore({
   key1:0,
   key2:0,
 })
-
-
 
 function App(){
   // This component will automatically re-render when store.key1 will change.

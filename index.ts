@@ -6,17 +6,10 @@ import cloneDeep = require("lodash.clonedeep")
 interface a{
   updateStore:()=>void
   useRerenderIfChange:(callback)=>void
-  persistent:{[key:string]:any}
-  isReady?:Promise<void>
 }
-interface PersistentProvider {
-  setKey:(key:string,value:any)=>Promise<void>
-  getKey:(key:string)=>Promise<any>
-}
-export function NewStore<T>(state:(T & {persistent:{[key:string]:any}}),persistentProvider?:PersistentProvider):(a & T) {
+export function newStore<T>(state:T):(a & T) {
   //@ts-ignore
   var Store:(a & T)=state
-  var prevPersistented = {... (Store?.persistent || {})}
   var callbacks = {}
   var callbacksNextAvailableKey = 0
   
@@ -24,21 +17,6 @@ export function NewStore<T>(state:(T & {persistent:{[key:string]:any}}),persiste
     scheduled=false
     for (var i in callbacks) {
       callbacks[i]()
-    }
-    if(Store.persistent) {
-      if(!persistentProvider) {
-        throw new Error('cannot use persistent without persistent provider')
-      }      
-      for(let key of Object.keys(Store.persistent)) {
-        var val=Store.persistent[key]
-        // console.log({key,val:JSON.stringify(val),prev:prevPersistented[key]})
-        
-        if(JSON.stringify(val)!=prevPersistented[key]) {
-          persistentProvider.setKey(key,val)
-          prevPersistented[key]=JSON.stringify(val)
-          // console.log({prevPersistented})
-        }
-      }
     }
   }
   var scheduled=false  

@@ -86,7 +86,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Aminadav Glickshtein and the Redux documentation authors.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Aminadav Glickshtein and the GlobX documentation authors.`,
     },
   },
   presets: [
