@@ -11,8 +11,8 @@ module.exports = {
   projectName: 'globx', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: 'YOUR_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
+      apiKey: '859997df67660e4ebcaf6a940e2d2a46',
+      indexName: 'globx',
 
       // Optional: see doc section bellow
       contextualSearch: true,

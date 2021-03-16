@@ -27,9 +27,15 @@ const myStore=newStore({
 export default myStore
 ```
 
-the store can contain primitive values, objects, functions, arrays, Dates or whatever you wish. is just a regular javascript object.
+The store may contain primitive values, objects, functions, arrays, Dates or whatever you wish. is just a regular javascript object.
 
-Then you can show values from the store and update or call functions in your store
+:::tip
+
+If you need you can create more than one store
+
+:::
+
+Then you can show values from the store and update or call functions in your store:
 
 
 ```js
@@ -49,7 +55,7 @@ To be sure that your component will render when value changed you have to do 2 t
 - call the function `updateStore` after changing the store.
 - Call the function `useRenderIfIChange` and give it an array of values that should be inseted. One of the those values changed, the component will rerender.
 
-```js {3,6}
+```js {3,8}
 import store from './mystore'
 function MyComponent(){
   store.useRerenderIfChange(()=>[store.value])
@@ -57,6 +63,7 @@ function MyComponent(){
     Current value: {store.value}
     <button onClick={()=>{
       store.value++
+      store.updateStore()
     }}>Increment</button>
   </div>
 }
@@ -87,10 +94,11 @@ function MyComponent(){
 }
 ```
 
-The last thing to now. You have auto-complete everywhere:
+The last thing to know is that you have auto-complete everywhere:
 
 ![img](https://snipboard.io/bkl6nq.jpg)
 
+All IDE smart language features like Renaming Symbols, or find all references are working.
 
 ## Async operations
 
@@ -110,7 +118,7 @@ What about async operations? It's working out of the box:
 
 ## Sharing Logic
 
-If you wish to have a specific logic of mutating to the store (actions), you can add functions to the store and call them
+If you wish to have a specific logic of mutating to the store (actions), you can add functions to the store and call them:
 
 ```js
 var store=newStore({
