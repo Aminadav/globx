@@ -5,6 +5,17 @@ sidebar_label: Getting Started
 slug: /
 ---
 
+## Three functions
+
+GlobX contains only three functions. Two functions has only one parameters, and one function has no parameters.
+That it. If you learn that, you know everything about GlobX.
+
+- `newStore` - Usually called once for a project with you initial store.
+- `updateStore` - Called after every change to your store, when you wish to rerender automatically the required components.
+- `useRenderIfIChange` - Called in every component that needs to be updated based on specific paths in your store
+
+That It! No High-order-components. No Providers, connectors, modifiers, decorations, selectors or other smells.
+
 ## Installation
 
 First you have to install GlobX
@@ -135,3 +146,7 @@ You can also create async functions.
 ## Multi stores
 
 Although probably most of the projects will use one global store. You are free to create multi stores, and use each or both of them in any component.
+
+:::tip
+
+You can call updateStore as many time you wish. GlobX smart enough to executing it only once per rendering cycle.

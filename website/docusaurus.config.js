@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'GlobX',
-  tagline: 'Lightweight & powerful state management for busy people. 90% less code to write in compare to Redux.',
+  tagline: 'A developer friendly state management for busy people. 90% less code to write in compare to Redux. 100% automatically auto-complete for your state.',
   url: 'https://globx.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
