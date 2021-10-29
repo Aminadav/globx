@@ -64,9 +64,13 @@ function MyComponent(){
 To be sure that your component will render when value changed you have to do 2 things:
 
 - call the function `updateStore` after changing the store.
-- Call the function `useRenderIfIChange` and give it an array of values that should be inseted. One of the those values changed, the component will rerender.
+- Call the function `useRenderIfIChange` and give it an array of values that should be inseted. When of the those values changed, the component will rerender.
 
+<<<<<<< HEAD
 ```js {3,8}
+=======
+```js {3,9}
+>>>>>>> 22489d5bdfbe69cb2722885e9c2aa7e7eb735913
 import store from './mystore'
 function MyComponent(){
   store.useRerenderIfChange(()=>[store.value])
@@ -146,7 +150,10 @@ You can also create async functions.
 ## Multi stores
 
 Although probably most of the projects will use one global store. You are free to create multi stores, and use each or both of them in any component.
+<<<<<<< HEAD
 
 :::tip
 
 You can call updateStore as many time you wish. GlobX smart enough to executing it only once per rendering cycle.
+=======
+>>>>>>> 22489d5bdfbe69cb2722885e9c2aa7e7eb735913
