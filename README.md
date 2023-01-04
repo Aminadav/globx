@@ -1,17 +1,17 @@
 # react-easy-shared-state
 
-A global state manager that let you read and change the the whole state from all your components.
+The most easiset solution to share state across many components. Every component can read and write the state like any other JS object. No need to use provider or context.
 
-A new solution for creating simple and powerful stores for React apps. The react-easy-shared-state let you change and read any part of the store from every component or traditional JavaScript code.
+It is fully supported every version of React (including v18), it's working really fast. You do not need to create actions and reducers. The truth is that you almost not feel it.
 
-Let's take the Redux todo example. (https://github.com/reduxjs/redux/tree/master/examples/todos) Wen implemented it in react-easy-shared-state (https://github.com/Aminadav/react-easy-shared-state-todo) it's saving about 90% of the code.
+Let's take the Redux todo example. (https://github.com/reduxjs/redux/tree/master/examples/todos) When implemented in react-easy-shared-state (https://github.com/Aminadav/react-easy-shared-state-todo) it's saving about 90% of the code.
 
 ## Why react-easy-shared-state?
 
 - Very easy to refactor.
 - Great for agility. Let you easily refactor.
 - Mutable. You don't need to clone object and array's before changing.
-- It working fast.
+- It's working fast.
 - You can read and change in part of your state easily from any component.
 - Supporting all smart features of VSCode. Including auto-complete, find all-refreneces, and rename symbols!
 - I'm not a big fun of Redux. Too many code to write, hard to refactor, and not supporting auto-complete.
