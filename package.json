@@ -1,11 +1,11 @@
 {
-  "name": "react-one-state",
-  "version": "1.0.13",
+  "name": "react-easy-shared-state",
+  "version": "1.0.15",
   "descript/urlion": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aminadav/react-one-state.git"
+    "url": "git+https://github.com/Aminadav/react-easy-shared-state.git"
   },
   "keywords": [
     "react"
@@ -13,14 +13,10 @@
   "author": "Aminadav Glickshtein",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aminadav/react-one-state/issues"
+    "url": "https://github.com/Aminadav/react-easy-shared-state/issues"
   },
-  "homepage": "https://github.com/Aminadav/react-one-state#readme",
-  "dependencies": {
-    "lodash.clonedeep": "",
-    "lodash.isequal": ""
-  },
+  "homepage": "https://github.com/Aminadav/react-easy-shared-state#readme",
   "peerDependencies": {
-    "react": ">16.0.0"
+    "react": ""
   }
 }

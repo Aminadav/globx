@@ -7,8 +7,8 @@ slug: /
 
 ## Three functions
 
-react-one-state contains only three functions. Two functions has only one parameters, and one function has no parameters.
-That it. If you learn that, you know everything about react-one-state.
+react-easy-shared-state contains only three functions. Two functions has only one parameters, and one function has no parameters.
+That it. If you learn that, you know everything about react-easy-shared-state.
 
 - `newStore` - Usually called once for a project with you initial store.
 - `updateStore` - Called after every change to your store, when you wish to rerender automatically the required components.
@@ -18,10 +18,10 @@ That It! No High-order-components. No Providers, connectors, modifiers, decorati
 
 ## Installation
 
-First you have to install react-one-state
+First you have to install react-easy-shared-state
 
 ```shell
-npm i react-one-state
+npm i react-easy-shared-state
 ```
 
 
@@ -30,7 +30,7 @@ npm i react-one-state
 Create the store file `mystore.js` (or `mystore.ts`)
 
 ```js
-import {newStore} from 'react-one-state'
+import {newStore} from 'react-easy-shared-state'
 const myStore=newStore({
   value:1,
   todos:[]
@@ -86,7 +86,7 @@ function MyComponent(){
 
 :::note
 
-That It! Now you know everything about how to use react-one-state!
+That It! Now you know everything about how to use react-easy-shared-state!
 
 :::
 
@@ -154,6 +154,6 @@ Although probably most of the projects will use one global store. You are free t
 
 :::tip
 
-You can call updateStore as many time you wish. react-one-state smart enough to executing it only once per rendering cycle.
+You can call updateStore as many time you wish. react-easy-shared-state smart enough to executing it only once per rendering cycle.
 =======
 >>>>>>> 22489d5bdfbe69cb2722885e9c2aa7e7eb735913
