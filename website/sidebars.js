@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    react-one-state: ['getting-started'],
+    GlobX: ['getting-started'],
     Examples: ['todo'],
   },
 };

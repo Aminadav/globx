@@ -1,18 +1,18 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'react-one-state',
+  title: 'GlobX',
   tagline: 'A developer friendly state management for busy people. 90% less code to write in compare to Redux. 100% automatically auto-complete for your state.',
-  url: 'https://react-one-state.js.org',
+  url: 'https://globx.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'aminadav', // Usually your GitHub org/user name.
-  projectName: 'react-one-state', // Usually your repo name.
+  projectName: 'globx', // Usually your repo name.
   themeConfig: {
     algolia: {
       apiKey: '859997df67660e4ebcaf6a940e2d2a46',
-      indexName: 'react-one-state',
+      indexName: 'globx',
 
       // Optional: see doc section bellow
       contextualSearch: true,
@@ -23,9 +23,9 @@ module.exports = {
       //... other Algolia params
     },
     navbar: {
-      title: 'react-one-state',
+      title: 'GlobX',
       logo: {
-        alt: 'react-one-state',
+        alt: 'GlobX',
         src: 'img/favicon.ico',
       },
       items: [
@@ -37,7 +37,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/aminadav/react-one-state',
+          href: 'https://github.com/aminadav/globx',
           label: 'GitHub',
           position: 'right',
         },
@@ -60,11 +60,11 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/react-one-state',
+              href: 'https://stackoverflow.com/questions/tagged/globx',
             },
             {
               label: 'GitHub Issues',
-              href: 'https://github.com/aminadav/react-one-state/issues',
+              href: 'https://github.com/aminadav/globx/issues',
             },
           ],
         },
@@ -77,7 +77,7 @@ module.exports = {
             // },
             {
               label: 'GitHub',
-              href: 'https://github.com/aminadav/react-one-state',
+              href: 'https://github.com/aminadav/globx',
             },
             {
               label: 'Reddit post',
@@ -86,7 +86,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Aminadav Glickshtein and the react-one-state documentation authors.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Aminadav Glickshtein and the GlobX documentation authors.`,
     },
   },
   presets: [
@@ -97,13 +97,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/aminadav/react-one-state/edit/master/website/',
+            'https://github.com/aminadav/globx/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/aminadav/react-one-state/edit/master/website/blog/',
+            'https://github.com/aminadav/globx/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

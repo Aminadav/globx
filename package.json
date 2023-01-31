@@ -1,11 +1,14 @@
 {
-  "name": "react-one-state",
-  "version": "1.0.13",
-  "descript/urlion": "",
+  "name": "globx",
+  "version": "1.0.10",
+  "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aminadav/react-one-state.git"
+    "url": "git+https://github.com/Aminadav/globx.git"
   },
   "keywords": [
     "react"
@@ -13,9 +16,9 @@
   "author": "Aminadav Glickshtein",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aminadav/react-one-state/issues"
+    "url": "https://github.com/Aminadav/globux/issues"
   },
-  "homepage": "https://github.com/Aminadav/react-one-state#readme",
+  "homepage": "https://github.com/Aminadav/globx#readme",
   "dependencies": {
     "lodash.clonedeep": "",
     "lodash.isequal": ""
