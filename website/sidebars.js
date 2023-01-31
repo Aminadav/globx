@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    react-easy-shared-state: ['getting-started'],
+    react-one-state: ['getting-started'],
     Examples: ['todo'],
   },
 };
