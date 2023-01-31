@@ -1,7 +1,18 @@
 //@ts-check
-import { useState, useEffect, useRef } from "react"
-import isEqual = require("lodash.isequal")
-import cloneDeep = require("lodash.clonedeep")
+import { useState, useEffect, useRef, useCallback } from "react"
+
+function cloneDeep(obj) {
+  return JSON.parse(JSON.stringify(obj))
+}
+function isEqual(a,b) {
+  if(typeof a!=typeof b) {
+    return false
+  }
+  if(typeof a=='object' && typeof b=='object') {
+    if (Object.keys(a).length!=Object.keys(b).length) return false
+  }
+  return JSON.stringify(a)==JSON.stringify(b)
+}
 
 interface a{
   updateStore:()=>void
@@ -35,7 +46,8 @@ export function newStore<T>(state:T):(a & T) {
     var callbacksKeyRef = useRef(callbacksNextAvailableKey++)
 
     /** The array from the user. Cloned so new changes will not be there */
-    var lastValueRef = useRef(cloneDeep(callback(Store)))
+    var cloned = useCallback(()=>cloneDeep(callback(Store)))
+    var lastValueRef = useRef(cloned)
     useEffect(() => {
       // When object mount, add a function to the callbacks, to change if the value changes
       // it will trigged by the "updateStore below"

@@ -1,6 +1,6 @@
 {
   "name": "globx",
-  "version": "1.0.10",
+  "version": "1.0.16",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,6 @@
     "url": "https://github.com/Aminadav/globux/issues"
   },
   "homepage": "https://github.com/Aminadav/globx#readme",
-  "dependencies": {
-    "lodash.clonedeep": "",
-    "lodash.isequal": ""
-  },
   "peerDependencies": {
     "react": ">16.0.0"
   }

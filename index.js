@@ -3,8 +3,19 @@ exports.__esModule = true;
 exports.newStore = void 0;
 //@ts-check
 var react_1 = require("react");
-var isEqual = require("lodash.isequal");
-var cloneDeep = require("lodash.clonedeep");
+function cloneDeep(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+function isEqual(a, b) {
+    if (typeof a != typeof b) {
+        return false;
+    }
+    if (typeof a == 'object' && typeof b == 'object') {
+        if (Object.keys(a).length != Object.keys(b).length)
+            return false;
+    }
+    return JSON.stringify(a) == JSON.stringify(b);
+}
 function newStore(state) {
     //@ts-ignore
     var Store = state;
@@ -28,11 +39,12 @@ function newStore(state) {
      * @param callback {(store:Store)=>void}
      */
     Store.useRerenderIfChange = function (callback) {
-        var _a = react_1.useState(0), _ = _a[0], setMeToRerender = _a[1];
-        var callbacksKeyRef = react_1.useRef(callbacksNextAvailableKey++);
+        var _a = (0, react_1.useState)(0), _ = _a[0], setMeToRerender = _a[1];
+        var callbacksKeyRef = (0, react_1.useRef)(callbacksNextAvailableKey++);
         /** The array from the user. Cloned so new changes will not be there */
-        var lastValueRef = react_1.useRef(cloneDeep(callback(Store)));
-        react_1.useEffect(function () {
+        var cloned = (0, react_1.useCallback)(function () { return cloneDeep(callback(Store)); });
+        var lastValueRef = (0, react_1.useRef)(cloned);
+        (0, react_1.useEffect)(function () {
             // When object mount, add a function to the callbacks, to change if the value changes
             // it will trigged by the "updateStore below"
             callbacks[callbacksKeyRef.current] = function () {
